@@ -1,0 +1,74 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ============ 虚拟环境 ============
+venv/
+env/
+ENV/
+.venv/
+conda-meta/
+
+# ============ 环境变量 / 密钥 ============
+.env
+.env.local
+.env.*.local
+*.key
+
+# ============ 项目运行时产物 ============
+# FAISS / Chroma 索引
+chroma_qa_db/
+faiss_db/
+faiss_parent_db/
+parent_docstore/
+*.faiss
+*.pkl
+*.index
+
+# 日志
+logs/
+*.log
+
+# ============ 数据集（大文件，不传 GitHub）============
+# 注意：必须写成 "data/medical_knowledge/*"（带星号），
+# 不能写成 "data/medical_knowledge/"（不带星号）。
+# 不带星号会排除整个目录本身，导致下面的 ! 例外规则失效。
+data/medical_knowledge/*
+data/**/*.jsonl
+data/**/*.parquet
+data/**/*.csv
+!data/medical_knowledge/.gitkeep
+!data/medical_knowledge/sample.jsonl
+
+# ============ 模型权重（绝对不传）============
+models/checkpoints/
+*.bin
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# ============ IDE ============
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# ============ 测试临时产物 ============
+tests/tmp/
+.coverage
+
+
+!data/medical_knowledge/sample.jsonl

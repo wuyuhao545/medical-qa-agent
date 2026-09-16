@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智医助手 · 流行病学知识问答</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- 顶部 -->
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">🩺</div>
+        <div class="titles">
+          <h1>智医助手</h1>
+          <p class="subtitle">流行病学知识问答 · RAG + Agent</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <button id="resetBtn" class="btn-ghost" title="重置会话 Token 预算">♻️ 重置</button>
+      </div>
+    </header>
+
+    <!-- 消息区 -->
+    <main id="messages" class="messages">
+      <div class="message assistant">
+        <div class="avatar">🤖</div>
+        <div class="bubble">
+          <div class="content">您好！我是智医助手，可以回答流行病学、常见疾病、用药知识等医学问题。请描述您的问题。</div>
+          <div class="meta">⚠️ 知识科普，不构成诊疗建议</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 底部 -->
+    <footer class="footer">
+      <div class="status" id="status">🪙 加载中…</div>
+      <div class="composer">
+        <textarea
+          id="input"
+          placeholder="输入您的医学问题…（Enter 发送 / Shift+Enter 换行）"
+          rows="1"
+        ></textarea>
+        <button id="sendBtn" class="btn-send">发送</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

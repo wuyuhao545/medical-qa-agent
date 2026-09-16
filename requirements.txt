@@ -1,0 +1,18 @@
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+zhipuai>=2.0.0
+chromadb>=0.5.0
+sentence-transformers>=2.2.0
+langchain>=0.3.0
+langchain-openai>=0.3.0
+pypdf>=4.0.0
+docx2txt>=0.8
+python-docx>=1.0.0
+rank-bm25                        # BM25 检索算法
+sentence-transformers            # Cross-Encoder 重排序模型
+unstructured[pdf,image]>=0.10.0  # 提供 PDF/图片加载及OCR
+pytesseract>=0.3.10              # OCR引擎（Tesseract）
+pdf2image>=1.16.0                # 将PDF转为图片（供OCR使用）
+watchdog>=3.0.0                  # 监控文件组件
+fastapi>=0.110.0                 # 后端框架
+uvicorn[standard]>=0.29.0        # 安装 Uvicorn 
